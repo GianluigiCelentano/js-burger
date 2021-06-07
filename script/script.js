@@ -15,9 +15,9 @@ var coupon = document.getElementById("discount")
 coupon = false
 var discount20 = parseInt(result) * 20 / 100;
 var couponCodes = ["1234","abcd"]
-if (couponCodes === coupon) {
+if (coupon === couponCodes) {
     var result = 2
-    coupon === true
+    coupon = true
     var discountPrice = result - discount20;
     totalCost.innerHTML = "Your price" + " " + discountPrice.toFixed(2) + " " + "€"
 } 
