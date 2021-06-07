@@ -9,5 +9,5 @@ calculateButton.addEventListener('click', function(){
             result += parseInt(ingredients[i].value)
         }
     }
-    totalCost.innerHTML = "Your price" + " " + result + " " + "€"
+    totalCost.innerHTML = "Your price" + " " + result.toFixed(2) + " " + "€"
 })
