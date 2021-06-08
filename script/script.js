@@ -1,4 +1,4 @@
-var burgerName = prompt("Inserisci il nome del tuo hamburger")
+var burgerName = prompt("Insert the name of your hamburger")
 document.getElementById("burgername").innerHTML = burgerName
 var calculateButton = document.getElementsByClassName("calculate")[0];
 var totalCost = document.getElementById("sum-ingredients")
