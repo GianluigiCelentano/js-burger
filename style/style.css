@@ -34,3 +34,8 @@
     color: white;
     font-size: 30px;
 }
+.placeholder {
+    border-radius: 10px;
+    border: none;
+    background-color: antiquewhite;
+}

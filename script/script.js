@@ -3,7 +3,7 @@ document.getElementById("burgername").innerHTML = burgerName
 var calculateButton = document.getElementsByClassName("calculate")[0];
 var totalCost = document.getElementById("sum-ingredients")
 calculateButton.addEventListener('click', function(){
-    var result = 2
+    var result = 3
     var ingredients = document.getElementsByClassName("ingredients");
     for (var i = 0; i < ingredients.length; i++) {
         if(ingredients[i].checked) {
@@ -18,7 +18,6 @@ calculateButton.addEventListener('click', function(){
     var coupon = document.getElementById("discount").value
     var couponFlag = false
     var couponCodes = ["1234","abcd"]
-    var result = 2
     var discount20 = parseInt(result) * 20 / 100;
     for(var x = 0; x < couponCodes.length; x++) {
     if (coupon === couponCodes[x]) {
