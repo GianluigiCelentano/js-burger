@@ -10,14 +10,28 @@ calculateButton.addEventListener('click', function(){
         }
     }
     totalCost.innerHTML = "Your price" + " " + result.toFixed(2) + " " + "€"
-})
-var coupon = document.getElementById("discount")
-coupon = false
-var discount20 = parseInt(result) * 20 / 100;
-var couponCodes = ["1234","abcd"]
-if (coupon === couponCodes) {
+
+ // discount code
+
+    var coupon = document.getElementById("discount").value
+    var couponFlag = false
+    var couponCodes = ["1234","abcd"]
     var result = 2
-    coupon = true
-    var discountPrice = result - discount20;
-    totalCost.innerHTML = "Your price" + " " + discountPrice.toFixed(2) + " " + "€"
-} 
+    var discount20 = parseInt(result) * 20 / 100;
+    for(var x = 0; x < couponCodes.length; x++) {
+    if (coupon === couponCodes[x]) {
+        couponFlag = true
+    }
+    } 
+    if (couponFlag) {
+        var discountPrice = result - discount20
+        totalCost.innerHTML = "Your price" + " " + discountPrice.toFixed(2) + " " + "€"
+    } else if(coupon.length > 0 && couponFlag !== true) {
+        alert("coupon non presente")
+    } else {
+        console.log("L'utente non ha inserito nessun coupon")
+    }
+})
+
+    
+
