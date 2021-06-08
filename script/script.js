@@ -1,3 +1,5 @@
+var burgerName = prompt("Inserisci il nome del tuo hamburger")
+document.getElementById("burgername").innerHTML = burgerName
 var calculateButton = document.getElementsByClassName("calculate")[0];
 var totalCost = document.getElementById("sum-ingredients")
 calculateButton.addEventListener('click', function(){
@@ -9,7 +11,7 @@ calculateButton.addEventListener('click', function(){
             result += parseFloat(ingredients[i].value)
         }
     }
-    totalCost.innerHTML = "Your price" + " " + result.toFixed(2) + " " + "€"
+    totalCost.innerHTML = "YOUR PRICE" + " " + result.toFixed(2) + " " + "€"
 
  // discount code
 
@@ -25,7 +27,7 @@ calculateButton.addEventListener('click', function(){
     } 
     if (couponFlag) {
         var discountPrice = result - discount20
-        totalCost.innerHTML = "Your price" + " " + discountPrice.toFixed(2) + " " + "€"
+        totalCost.innerHTML = "YOUR PRICE" + " " + discountPrice.toFixed(2) + " " + "€"
     } else if(coupon.length > 0 && couponFlag !== true) {
         alert("coupon non presente")
     } else {

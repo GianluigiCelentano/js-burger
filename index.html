@@ -5,36 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Your Burger</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <form>
-        <input type="checkbox" class="ingredients" id="ingredients1" value="1"> 
-        <label for=ingredients1>add cheese</label>
-
-        <input type="checkbox" class="ingredients" id="ingredients2" value="1.50"> 
-        <label for=ingredients2>add egg</label>
-
-        <input type="checkbox" class="ingredients" id="ingredients3" value="0.50">
-        <label for=ingredients3>add mustard</label>
-
-        <input type="checkbox" class="ingredients" id="ingredients4" value="0.50"> 
-        <label for=ingredients4>add tomato</label>
-
-        <input type="checkbox" class="ingredients" id="ingredients5" value="0.50"> 
-        <label for=ingredients5>add lettuce</label>
-
-        <input type="checkbox" class="ingredients" id="ingredients6" value="0.50"> 
-        <label for=ingredients6>add ketchup</label>
-
-        <div>
-            <input type="text" id="discount" value="" placeholder="coupon-code">
-            <span class=discount>Discount Coupon</span>
+    <div class="container">
+        <div class="up-bar">
+            <div class="row">
+                <div class="col-11">
+                    <h1 class="p-top p-left fw-bold">CREATE YOUR BURGER</h1>
+                </div>
+                <div class="col-1">
+                    <img class="logo" src="./img/burger-top.png" alt="">
+                </div>
+            </div>
         </div>
+        <div class="fw-bold text-center fs-1" id="burgername"></div>
+        <h4 class="fw-bold p-top p-left">INGREDIENTS</h4>
+        <form class="text-center">
+            <div class="p-top">
+                <div class="row">
+                    <div class="col">
+                        
+                         
+                        <label for=ingredients1>
+                            <img for=ingredients class="img-resize" src="./img/cheese.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients1" value="1">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">cheese</span> 
+                        </label>
 
-        <div><input type="button" class="calculate" id="total" value="calculate" ></div>
-        <div id="sum-ingredients"></div>
-    </form>
+                        <label for=ingredients2>
+                            <img class="img-resize" src="./img/fried-egg.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients2" value="1.50">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">egg</span>
+                        </label>
+
+                        <label for=ingredients3>
+                            <img class="img-resize" src="./img/mustard.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients3" value="0.50">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">mustard</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="p-top">
+                <div class="row">
+                    <div class="col">
+                        
+                        <label for=ingredients4>
+                            <img class="img-resize" src="./img/tomato.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients4" value="0.50">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">tomato</span>
+                        </label>
+ 
+                        <label for=ingredients5>
+                            <img class="img-resize" src="./img/lettuce.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients5" value="0.50">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">lettuce</span>
+                        </label>
+
+                        <label for=ingredients6>
+                            <img class="img-resize" src="./img/ketchup.svg" alt="">
+                            <input type="checkbox" class="ingredients" id="ingredients6" value="0.50">
+                            <span class="text-danger fw-bold">add</span> <span class="font-weight-normal">ketchup</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-top">
+                <input type="text" id="discount" value="" placeholder="coupon-code">
+                <span class=discount>Discount Coupon</span>
+            </div>
+
+            <div class="p-top">
+                <input type="button" class="calculate text-black fw-bold" id="total" value="calculate" >
+            </div>
+            <div class="sum m-top p-top text-white fw-bold" id="sum-ingredients"></div>
+        </form>
+    </div>
     <script src="./script/script.js"></script>
 </body>
 </html>

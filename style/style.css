@@ -1,0 +1,36 @@
+.up-bar {
+    background-color: #FDBB40;
+    height: 130px;
+}
+.logo {
+    height: 200px;
+}
+.p-top {
+    padding-top: 35px;
+}
+.p-left {
+    padding-left: 15px;
+}
+.m-top {
+    margin-top: 35px;
+}
+.img-resize {
+    height: 80px;
+    cursor: pointer;
+}
+.ingredients , span {
+    cursor: pointer;
+}
+.calculate {
+    background-color: #FDBB40;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #FDBB40;
+}
+.sum {
+    background-color: #D33359;
+    height: 130px;
+    color: white;
+    font-size: 30px;
+}
